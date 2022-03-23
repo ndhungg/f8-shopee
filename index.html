@@ -1,73 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>f8-shopee</title>
 
-    <!-- link reset css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link rel="stylesheet" href="./asset/css/base.css" />
-    <link rel="stylesheet" href="./asset/css/main.css" />
-    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>f8-shopee</title>
 
-    <!-- link google roboto font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="app">
-        <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
-                    <ul class="header__navbar-list">
-                       <li class="header__navbar-item header__navbar-item--separator">Vào cửa hàng trên ứng dụng</li>
-                       <li class="header__navbar-item">
-                         <span class="header__navbar-title--no-pointer">Kết nối</span>
-                         <a href="" class="header__navbar-icon-link">
-                         <i class="header__navbar-icon fa-brands fa-facebook-f"></i>
-                         </a>
-                         <a href="" class="header__navbar-icon-link">
-                           <i class="header__navbar-icon fa-brands fa-instagram"></i>
-                          </a>
-                       </li>
-                    </ul>
-    
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">
-                              <i class="header__navbar-icon fa-solid fa-bell"></i>
-                              Thông báo
-                            </a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">
-                              <i class="header__navbar-icon fa-solid fa-circle-question"></i>
-                              Hỗ trợ
-                            </a>
-                        </li>
-                        <li class="header__navbar-item header__navbar-item-bold header__navbar-item--separator">Đăng ký</li>
-                        <li class="header__navbar-item header__navbar-item-bold">Đăng nhập</li>
-                    </ul>   
-                </nav>
-            </div>
-        </header>
+  <!-- link reset css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="./asset/css/base.css" />
+  <link rel="stylesheet" href="./asset/css/main.css" />
 
-        <div class="container">
+  <!-- link fontawesome -->
+  <link rel="stylesheet" href="./asset/fonts/fontawesome-free-6.1.1-web/css/all.min.css" />
 
-        </div>
+  <!-- link google roboto font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+</head>
 
-        <div class="footer">
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="grid">
+        <nav class="header__navbar">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item header__navbar-item-has-qr header__navbar-item--separator">
+              Vào cửa hàng trên ứng dụng TickID
 
-        </div>
-    </div>
-  </body>
+              <!-- Header QR Code -->
+              <div class="header-qr">
+                <img src="./asset/img/qr-code.png" alt="QR code" class="header-qr-img" />
+                <div class="header-qr-apps">
+                  <a href="" class="header-qr-link">
+                    <img src="./asset/img/googleplay.png" alt="Download google play" class="header-qr-download-img" />
+                  </a>
+                  <a href="" class="header-qr-link">
+                    <img src="./asset/img/appstore.png" alt="Download appstore " class="header-qr-download-img" />
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="header__navbar-item">
+              <span class="header__navbar-title--no-pointer">Kết nối</span>
+              <a href="" class="header__navbar-icon-link">
+                <i class="header__navbar-icon fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="" class="header__navbar-icon-link">
+                <i class="header__navbar-icon fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item">
+              <a href="" class="header__navbar-item-link">
+                <i class="header__navbar-icon fa-solid fa-bell"></i>
+                Thông báo
+              </a>
+            </li>
+            <li class="header__navbar-item">
+              <a href="" class="header__navbar-item-link">
+                <i class="header__navbar-icon fa-solid fa-circle-question"></i>
+                Hỗ trợ
+              </a>
+            </li>
+            <li class="header__navbar-item header__navbar-item-bold header__navbar-item--separator">
+              Đăng ký
+            </li>
+            <li class="header__navbar-item header__navbar-item-bold">
+              Đăng nhập
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container"></div>
+
+    <div class="footer"></div>
+  </div>
+</body>
+
 </html>
