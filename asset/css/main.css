@@ -25,7 +25,8 @@
     min-height: 26px;
 }
 
-.header__navbar-item-has-qr:hover .header-qr {
+.header__navbar-item-has-qr:hover .header-qr,
+.header__notify-has-notification:hover .header__notify {
     display: block;
 }
 
@@ -70,6 +71,7 @@
 
 .header__navbar-icon {
     font-size: 1.6rem;
+    padding-right: 4px;
 }
 
 .header__navbar-icon-link {
@@ -80,6 +82,7 @@
 
 .header__navbar-title--no-pointer {
     cursor: text;
+    margin-right: 4px;
     color: var(--white-color);
 }
 
@@ -127,3 +130,134 @@
 .header-qr-download-img {
     height: 16px;
 }
+
+/* Header Notifycation */
+.header__notify {
+    right: 0;
+    top: 115%;
+    width: 404px;
+    cursor: default;
+    position: absolute;
+    display: none;
+    border: 1px solid #D3D3D3;
+    will-change: opacity transform;
+    background-color: var(--white-color);
+    transform-origin: calc(100% - 20px) top;
+    -webkit-animation :headerNotificationGrow 0.3s ease-in;
+    -moz-animation: headerNotificationGrow 0.3s ease-in;
+    -ms-zoom-animation: headerNotificationGrow 0.3s ease-in;
+    -o-animation: headerNotificationGrow 0.3s ease-in;
+    animation: headerNotificationGrow 0.3s ease-in;
+}
+
+/* Cầu nối giữa bell với box Notification */
+.header__notify::after {
+    content: "";
+    right: 0;
+    top: -20px;
+    width: 90px;
+    height: 20px;
+    display: block;
+    position: absolute;
+}
+/* Tạo khoảng border nhô lên Notification */
+.header__notify::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -28px;
+    right: 10px;
+    border-style: solid;
+    border-width: 20px 26px;
+    border-color: transparent transparent  var(--white-color) transparent;
+}
+
+
+@keyframes headerNotificationGrow {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+.header__notify-header {
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--white-color);
+}
+
+.header__notify-header h3 {
+    color: #999;
+    font-weight: 400;
+    user-select: none;
+    font-size: 1.6rem;
+    margin: 0 0 0 12px;
+}
+
+.header__notify-list {
+    padding-left: 0;
+}
+
+.header__notify-item {
+
+}
+
+.header__notify-item:hover {
+    background-color: #f8f6f6;
+}
+
+.header__notify-item--viewed {
+    background-color: rgba(238,75,43,0.08);
+}
+
+.header__notify-link {
+    display: flex;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.header__notify-img {
+    width: 50px;
+    object-fit: cover;
+}
+
+.header__notify-info {
+    margin-left: 12px;
+}
+
+.header__notify-name {
+    display: block;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--text-color);
+}
+
+.header__notify-description {
+    opacity: 0.8;
+    display: block;
+    margin-top: 6px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: var(--black-color);
+}
+
+.header__notifi-footer {
+    display: flex;
+}
+
+.header__notifi-footer-btn {
+    width: 100%;
+    margin: auto;
+    padding: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
