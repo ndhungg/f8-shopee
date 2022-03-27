@@ -33,7 +33,6 @@ html {
 }
 
 /* Animation */
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -43,3 +42,44 @@ html {
     }
 }
 
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
+ .btn {
+    outline: none;
+    border: none;
+    height: 34px;
+    padding: 0px;
+    min-width: 120px;
+    font-size: 1.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.03)
+}
+
+.btn.btn--primary {
+    margin-left: 40px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    color: #f9f9f9;
+    background-color: #aaa4a4;
+}

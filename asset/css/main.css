@@ -275,6 +275,7 @@
     background-color: var(--white-color);
 }
 
+/* Cầu nối  */
 .header_languge::after {
     content: "";
     display: block;
@@ -327,6 +328,110 @@
     font-size: 1.4rem;
     margin-left: 6px;
 }
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__overlay {
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--black-color);
+}
+
+
+.modal__body {
+    z-index: 1;
+    border-radius: 6px;
+    position: relative;
+    background-color: var(--white-color);
+}
+
+/* Authen Modal */
+.auth-form__container {
+    padding: 0 32px;
+    width: 600px;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.auth-form-heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+    padding: 16px 16px;
+    color: var(--text-color);
+}
+
+.auth-form__switch-btn {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 16px 16px;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.auth-form__input {
+    margin-top: 12px;
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 0 8px;
+    outline: none;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid rgb(209, 204, 204);
+}
+
+.auth-form__input:focus {
+    border-color: rgb(39, 38, 38);
+}
+
+.auth-form__aside {
+    text-align: center;
+    margin-top: 16px;
+    padding: 0 8px;
+}
+
+.auth-form__policy-text {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.auth-form__text-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.auth-form__controls {
+    margin-top: 80px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__social {
+    padding: 16px 32px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 
